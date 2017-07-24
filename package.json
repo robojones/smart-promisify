@@ -1,0 +1,37 @@
+{
+  "name": "smart-promisify",
+  "version": "0.0.1",
+  "description": "A smart implementation of promisify using native promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha",
+    "lint": "node_modules/eslint/bin/eslint.js ."
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robojones/smart-promisify.git"
+  },
+  "keywords": [
+    "promise",
+    "promisify",
+    "this",
+    "self",
+    "bind",
+    "apply",
+    "call"
+  ],
+  "author": "robojones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robojones/smart-promisify/issues"
+  },
+  "homepage": "https://github.com/robojones/smart-promisify#readme",
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-ultra": "^0.4.5",
+    "mocha": "^3.2.0"
+  }
+}
