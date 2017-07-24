@@ -4,14 +4,15 @@ function promisify(original, self = null) {
   }
 
   function wrapper(...args) {
+    let thisArg = self
     if (this !== global) {
-      // called with bound self
-      self = this
+      // called with bound this object
+      thisArg = this
     }
 
     if (typeof args[args.length - 1] === 'function') {
       // called with callback
-      return original.call(self, ...args)
+      return original.call(thisArg, ...args)
     }
 
     // promisified
@@ -25,7 +26,7 @@ function promisify(original, self = null) {
 
       args.push(cb)
 
-      original.call(self, ...args)
+      original.call(thisArg, ...args)
     })
   }
 
