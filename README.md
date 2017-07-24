@@ -9,6 +9,8 @@ npm i smart-promisify
 
 ## Example - Promisify fs.mkdir
 
+[![Build Status](https://travis-ci.org/robojones/smart-promisify.svg?branch=master)](https://travis-ci.org/robojones/smart-promisify)
+
 ```javascript
 const fs = require('fs')
 const promisify = require('smart-promisify')
