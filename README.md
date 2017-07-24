@@ -15,7 +15,7 @@ With smart-promisify you can obviously wrap asynchronous functions so they retur
 
 __But why smart?__
 
-The smart thing about this promisify module is, that you can use the wrapped function just like before. If you provide a __callback__, no promise will be returned. If you don't provide a callback, you will get you __promise__.
+The smart thing about this promisify module is, that you can use the wrapped function just like before. If you provide a __callback__, no promise will be returned. If you don't provide a callback, you will get your __promise__.
 
 You can also change the this object of the wrapped function. If you use .apply, .call or .bind on the wrapper, the __this object will also be applied to the wrapped function__.
 
