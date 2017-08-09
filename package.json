@@ -4,7 +4,7 @@
   "description": "A smart implementation of promisify using native promises",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha",
+    "test": "node_modules/istanbul/lib/cli.js cover _mocha",
     "lint": "node_modules/eslint/bin/eslint.js ."
   },
   "engines": {
@@ -32,6 +32,6 @@
   "devDependencies": {
     "eslint": "^4.2.0",
     "eslint-config-ultra": "^0.4.5",
-    "mocha": "^3.2.0"
+    "istanbul": "^0.4.5"
   }
 }
