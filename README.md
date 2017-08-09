@@ -2,6 +2,8 @@
 A smart implementation of promisify using native promises
 
 [![Build Status](https://travis-ci.org/robojones/smart-promisify.svg?branch=master)](https://travis-ci.org/robojones/smart-promisify)
+[![Test Coverage](https://codeclimate.com/github/robojones/smart-promisify/badges/coverage.svg)](https://codeclimate.com/github/robojones/smart-promisify/coverage)
+[![Issue Count](https://codeclimate.com/github/robojones/smart-promisify/badges/issue_count.svg)](https://codeclimate.com/github/robojones/smart-promisify)
 
 ## Install
 
