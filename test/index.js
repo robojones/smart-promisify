@@ -1,7 +1,7 @@
 const assert = require('assert')
 
 describe('smart-promisify', function () {
-  const promisify = require('.')
+  const promisify = require('..')
   const value = 'exampleValue'
 
   function exampleFn(arg, cb) {
