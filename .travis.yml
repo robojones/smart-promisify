@@ -10,7 +10,7 @@ after_success:
   - PUBLIC_VERSION=$(npm view $PACKAGE_NAME version)
   - PACKAGE_VERSION=$(node -p -e "require('./package.json').version")
   - echo "$PACKAGE_VERSION $PUBLIC_VERSION $TRAVIS_BRANCH"
-  - 'if [ "$PACKAGE_VERSION" != "$PUBLIC_VERSION" ] && [TRAVIS_BRANCH == "master"]; then
+  - 'if [ "$PACKAGE_VERSION" != "$PUBLIC_VERSION" ] && ["$TRAVIS_BRANCH" == "master"]; then
       echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
       npm publish
     fi'
