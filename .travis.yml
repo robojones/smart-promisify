@@ -1,9 +1,6 @@
 language: node_js
 node_js:
   - "7"
-addons:
-  code_climate:
-    repo_token: 0bbce54299334e688fce4242faec765f21e9101430d8b948df590e9da4f54623
 after_success:
   - # custom deploy
   - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
