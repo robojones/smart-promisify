@@ -1,6 +1,6 @@
 {
   "name": "smart-promisify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A smart implementation of promisify using native promises",
   "main": "index.js",
   "scripts": {
