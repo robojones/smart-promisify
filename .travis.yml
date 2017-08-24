@@ -5,6 +5,20 @@ node_js:
 addons:
   code_climate:
     repo_token: 0bbce54299334e688fce4242faec765f21e9101430d8b948df590e9da4f54623
+deploy:
+  - PACKAGE_NAME=${PWD##*/}
+  - PUBLIC_VERSION=$(npm view $PACKAGE_NAME version)
+  - PACKAGE_VERSION=$(cat package.json \
+  - | grep version \
+  - | head -1 \
+  - | awk -F: '{ print $2 }' \
+  - | sed 's/[",]//g' \
+  - | tr -d '[[:space:]]')
+  - if [ "$PACKAGE_VERSION" != "$PUBLIC_VERSION" ]; then
+  -   echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+  -   npm publish
+  - fi
 after_success:
+  - # report test coverage
   - npm install -g codeclimate-test-reporter
   - codeclimate-test-reporter < coverage/lcov.info
