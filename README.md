@@ -3,7 +3,12 @@ A smart implementation of promisify using native promises
 
 [![Build Status](https://travis-ci.org/robojones/smart-promisify.svg?branch=master)](https://travis-ci.org/robojones/smart-promisify)
 [![Test Coverage](https://codeclimate.com/github/robojones/smart-promisify/badges/coverage.svg)](https://codeclimate.com/github/robojones/smart-promisify/coverage)
-[![Issue Count](https://codeclimate.com/github/robojones/smart-promisify/badges/issue_count.svg)](https://codeclimate.com/github/robojones/smart-promisify)
+
+[![bitHound Code](https://www.bithound.io/github/robojones/smart-promisify/badges/code.svg)](https://www.bithound.io/github/robojones/smart-promisify)
+[![bitHound Overall Score](https://www.bithound.io/github/robojones/smart-promisify/badges/score.svg)](https://www.bithound.io/github/robojones/smart-promisify)
+[![bitHound Dependencies](https://www.bithound.io/github/robojones/smart-promisify/badges/dependencies.svg)](https://www.bithound.io/github/robojones/smart-promisify/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/robojones/smart-promisify/badges/devDependencies.svg)](https://www.bithound.io/github/robojones/smart-promisify/master/dependencies/npm)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Install
 
