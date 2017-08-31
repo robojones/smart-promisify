@@ -51,7 +51,7 @@ describe('smart-promisify', function () {
 
     it('should call the callback', function (cb) {
       const wrapped = promisify(exampleFn)
-      const result = wrapped(value, cb)
+      wrapped(value, cb)
     })
   })
 
