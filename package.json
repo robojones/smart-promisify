@@ -30,10 +30,9 @@
   },
   "homepage": "https://github.com/robojones/smart-promisify#readme",
   "devDependencies": {
-    "eslint": "^4.2.0",
+    "eslint": "^4.8.0",
     "eslint-config-ultra": "^0.4.5",
     "istanbul": "1.1.0-alpha.1",
-    "mocha": "^3.5.0"
-  },
-  "dependencies": {}
+    "mocha": "^4.0.0"
+  }
 }
